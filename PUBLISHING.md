@@ -4,13 +4,26 @@ This document is the release checklist for `dsh-music-ball`.
 
 ## Current state
 
-The source is ready as a **1.0.0** release candidate. The current environment has:
+The source is ready as a **1.0.0** release candidate. The local Git repository contains
+10 commits and the annotated tag `v1.0.0`. The current environment has:
 
 - no authenticated `npm` session;
-- no GitHub CLI or GitHub token;
-- no existing public GitHub repository for this package.
+- no GitHub CLI or terminal GitHub credential;
+- GitHub Desktop installed and logged in (its token is not available to `git`).
 
-Because of that, the following steps cannot be completed by the agent from this machine without credentials. They are ready to run once the maintainer signs in.
+### Publish the repository from GitHub Desktop
+
+1. Open **GitHub Desktop → File → Add Local Repository**.
+2. Select `D:\20319\Documents\dsh-plugins\dsh-music-ball`.
+3. Click **Publish repository**.
+4. Owner `Ziliang571`, name `dsh-music-ball`, visibility **Public**.
+5. After publishing, add the **`dsh-plugin`** topic on GitHub.
+
+The catalog still requires the repository to be at least **1 day old** before the
+submission PR will pass CI.
+
+Because of the missing terminal credentials, npm publishing and the catalog PR
+cannot be executed from this machine without a maintainer login.
 
 ## 1. npm package
 
