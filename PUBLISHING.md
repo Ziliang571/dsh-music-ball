@@ -4,23 +4,30 @@ This document is the release checklist for `dsh-music-ball`.
 
 ## Current state
 
-The source is ready as a **1.0.0** release candidate. The local Git repository contains
-10 commits and the annotated tag `v1.0.0`. The current environment has:
+`dsh-music-ball` 1.0.0 is published on GitHub:
 
-- no authenticated `npm` session;
-- no GitHub CLI or terminal GitHub credential;
-- GitHub Desktop installed and logged in (its token is not available to `git`).
+- repository: https://github.com/Ziliang571/dsh-music-ball
+- release: https://github.com/Ziliang571/dsh-music-ball/releases/tag/v1.0.0
+- release asset: `dsh-music-ball-1.0.0.tgz`
+- catalog Draft PR: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/14415
+- topic: `dsh-plugin`
+
+npm has not been published because the maintainer npm session is not authenticated.
+The catalog entry installs from the GitHub release tarball instead.
+
+The catalog requires the plugin repository to be at least **1 day old**. The Draft PR
+was opened on 2026-11-11 and should be marked **Ready for review** after the age gate
+passes. When the PR is ready, no code changes are required.
 
 ### Publish the repository from GitHub Desktop
+
+The repository is already pushed; this section is kept for a fresh checkout.
 
 1. Open **GitHub Desktop → File → Add Local Repository**.
 2. Select `D:\20319\Documents\dsh-plugins\dsh-music-ball`.
 3. Click **Publish repository**.
 4. Owner `Ziliang571`, name `dsh-music-ball`, visibility **Public**.
 5. After publishing, add the **`dsh-plugin`** topic on GitHub.
-
-The catalog still requires the repository to be at least **1 day old** before the
-submission PR will pass CI.
 
 Because of the missing terminal credentials, npm publishing and the catalog PR
 cannot be executed from this machine without a maintainer login.
