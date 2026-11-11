@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Music ball",
+    "description": "A draggable music ball with cover zoom, auto-hide, playlist search and reordering, library, favorites, collections, source-aware deletion, and a guided first run."
+  }
+}
